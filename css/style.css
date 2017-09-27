@@ -1,0 +1,109 @@
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+ body {
+   max-width: 1920px;
+   width: 100%;
+   background: white;
+   margin: 0;
+ }
+
+ .wrapper {
+   max-width: 580px;
+   width: 90%;
+   height: 100%;
+   padding: 20px 0;
+   margin: 0 auto;
+ }
+
+ .attention-img {
+   float: left;
+   width: 27%;
+   padding-top: 10px;
+ }
+
+.attention {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: #FF4800;
+  margin: 0 auto;
+}
+
+.info__texts {
+  width: 60%;
+  text-align: center;
+  float: left;
+}
+
+.info-img {
+  width: 30%;
+  float: right;
+}
+
+.progress-bar__container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seconds {
+  background-color: gray;
+  height: 20px;
+  width: 80%;
+  top: 100px;
+  margin: 0 auto;
+}
+
+.bar {
+  background: linear-gradient(to top, #00ECFF, #00CFFF);
+  height: 20px;
+  width: 0;
+}
+
+.animating {
+  animation: progress 5s ;
+  animation-fill-mode: forwards;
+}
+
+.animating-small {
+  animation: progress-small 5s ;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 67%;
+  }
+}
+
+@-webkit-keyframes progress-small {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 33%;
+  }
+}
+
+
+.btn {
+  background: #00E5FF;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px 0;
+  line-height: 3;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
